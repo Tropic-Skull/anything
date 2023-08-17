@@ -4,7 +4,7 @@ body {
   background: no-repeat;
   height: 100vh;
   font-family: sans-serif;
-  background-image: url(/image/login-bg.jpg);
+  background-image: url(image/login-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
