@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/css_login.css" />
+    <script
+      src="https://kit.fontawesome.com/7b5f3bf574.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/js/js_login.js"></script>
+  </head>
+  <body>
+    <section class="forms">
+      <div class="form login">
+        <img
+          class="user"
+          src="/image/login.jpg"
+          alt="user-avatar"
+          height="100px"
+          width="100px"
+        />
+        <h3>Log in</h3>
+        <div class="inputBox">
+          <div>
+            <label for="username"><i class="fa-regular fa-user"></i></label>
+            <input
+              id="username"
+              type="text"
+              name="Username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input
+              id="pass"
+              type="password"
+              name="Password"
+              placeholder="Password"
+              required
+            />
+          </div>
+        </div>
+        <p style="text-align: right"><a href="#">Forgot Password?</a></p>
+        <input type="submit" class="submit" value="Login" id="submit" />
+        <p style="text-align: center">
+          Don't have an account?
+          <a href="#" class="link">Sign up</a>
+        </p>
+      </div>
+      <!-----------------------------
+      --------------------------------->
+
+      <div class="form signup">
+        <img
+          class="user"
+          src="/image/login.jpg"
+          alt="user-avatar"
+          height="100px"
+          width="100px"
+        />
+        <h3>Sign up</h3>
+        <div class="inputBox">
+          <div>
+            <label for="username"><i class="fa-solid fa-envelope"></i></label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="username"><i class="fa-regular fa-user"></i></label>
+            <input
+              type="text"
+              name="Username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="Password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input
+              id="confirm"
+              type="password"
+              name="Password"
+              placeholder="Confirm password"
+              required
+            />
+          </div>
+        </div>
+        <input type="submit" class="submit" value="Sign up" />
+        <p style="text-align: center">
+          Already have an account?
+          <a href="#" class="link">Sign in</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
