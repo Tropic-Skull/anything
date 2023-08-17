@@ -103,7 +103,7 @@ ul {
 }
 .banner {
     min-height: 400px;
-    background-image: url(/image/banner.jpg);
+    background-image: url(image/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
