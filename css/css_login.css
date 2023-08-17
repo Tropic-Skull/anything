@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: no-repeat;
+  height: 100vh;
+  font-family: sans-serif;
+  background-image: url(/image/login-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 600px){
+    body{
+        background-size: cover fixed
+    }
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  min-height: 200px;
+  background: #000000;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.form.signup {
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease;
+}
+.forms.show-signup .form.signup{
+  opacity: 1;
+  pointer-events: auto;
+  transition: .3s ease;
+}
+.forms.show-signup .form.login{
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease;
+}
+.user {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+h3 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: skyblue;
+  text-align: center;
+}
+.form input {
+  width: 90%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: transparent;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+i {
+  color: teal
+}
+input:hover {
+  border: 1px solid teal;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3), 0 0 10px rgba(0, 255, 0, 0.2),
+    0 0 15px rgba(0, 255, 0, 0.1), 0 2px 0 black;
+}
+input:focus {
+  border-bottom: 2px solid teal;
+}
+.inputBox {
+  position: relative;
+}
+.submit {
+  width: 100% !important;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background-color: navy !important;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.form a {
+  color: skyblue;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+p {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: white;
+    font-size: 14px;
+}
+a:hover {
+  color: rgb(4, 66, 252);
+}
